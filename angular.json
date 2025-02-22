@@ -37,9 +37,15 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/jointjs/dist/joint.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/lodash/lodash.min.js",
+              "node_modules/backbone/backbone-min.js",
+              "node_modules/jointjs/dist/joint.min.js"
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -51,13 +57,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "1.5MB",
+                  "maximumError": "2MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "4MB",
+                  "maximumError": "8MB"
                 }
               ],
               "outputHashing": "all"
@@ -90,7 +96,9 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "jquery",
+              "backbone"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
@@ -107,5 +115,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "93ec79c5-790a-4041-89aa-0ced4a9b5ebc"
   }
 }

@@ -1,0 +1,7 @@
+.erd-entity text { fill: white; }
+.erd-entity .outer { fill: #2980b9; stroke: none; }
+.erd-attribute text { fill: black; }
+.erd-attribute .outer { fill: #f39c12; stroke: none; }
+.erd-relationship text { fill: black; }
+.erd-relationship .outer { fill: #9b59b6; stroke: none; }
+.erd-line .connection { stroke: black; }
